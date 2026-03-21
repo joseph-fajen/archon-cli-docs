@@ -15,3 +15,67 @@
   --sl-color-accent: #0d9488;
   --sl-color-accent-high: #0f766e;
 }
+
+/* Accordion styling for details/summary elements - scoped to content area only */
+.sl-markdown-content details {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  background: var(--sl-color-gray-7);
+}
+
+.sl-markdown-content details[open] {
+  border-color: var(--sl-color-accent);
+}
+
+.sl-markdown-content details summary {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sl-markdown-content details summary::-webkit-details-marker {
+  display: none;
+}
+
+.sl-markdown-content details summary::before {
+  content: '▶';
+  font-size: 0.75rem;
+  color: var(--sl-color-accent);
+  transition: transform 0.2s ease;
+}
+
+.sl-markdown-content details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.sl-markdown-content details summary:hover {
+  background: var(--sl-color-gray-6);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sl-markdown-content details:not([open]) summary:hover {
+  border-radius: 0.5rem;
+}
+
+.sl-markdown-content details > :not(summary) {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.sl-markdown-content details > :not(summary):first-of-type {
+  padding-top: 0;
+}
+
+/* Light mode adjustments */
+:root[data-theme='light'] .sl-markdown-content details {
+  background: var(--sl-color-gray-7);
+  border-color: var(--sl-color-gray-4);
+}
+
+:root[data-theme='light'] .sl-markdown-content details summary:hover {
+  background: var(--sl-color-gray-6);
+}

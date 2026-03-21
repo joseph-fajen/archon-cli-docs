@@ -82,4 +82,4 @@ See [CLI Flags Reference](/archon-cli-docs/reference/cli-flags/) for all flags.
 
 ## Not Sure Which Workflow?
 
-See [Choosing a Workflow](/archon-cli-docs/concepts/choosing-a-workflow/) for the full decision guide with examples and "when NOT to use" guidance.
+See [Workflow Reference](/archon-cli-docs/reference/workflow-reference/) for detailed documentation, examples, and "when NOT to use" guidance for all 16 workflows.
