@@ -19,7 +19,7 @@ All flags available for the Archon CLI.
 | Flag | Description | Example |
 |------|-------------|---------|
 | `--branch <name>` | Branch name for worktree | `--branch fix/issue-42` |
-| `--from <branch>` | Base branch (default: main) | `--from develop` |
+| `--from <branch>` | Base branch (default: main). Alias: `--from-branch` | `--from develop` |
 | `--cwd <path>` | Target directory | `--cwd /path/to/repo` |
 | `--no-worktree` | Run in live checkout | `--no-worktree` |
 | `--resume` | Resume from last step | `--resume` |

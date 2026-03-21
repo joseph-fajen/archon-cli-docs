@@ -39,6 +39,16 @@ Everything you need on one page.
 | `--resume` | Resume from last failed run |
 | `--json` | Machine-readable output (`workflow list` only) |
 
+## Branch Naming Conventions
+
+| Task Type | Pattern | Example |
+|-----------|---------|---------|
+| Fix issue | `fix/issue-{number}` | `fix/issue-123` |
+| Feature | `feat/{name}` | `feat/dark-mode` |
+| PR review | `review/pr-{number}` | `review/pr-456` |
+| Resolve conflicts | `resolve/pr-{number}` | `resolve/pr-456` |
+| General assist | `assist/{description}` | `assist/debug-auth` |
+
 ## Workflow Selection Decision Tree
 
 ```
@@ -79,3 +89,16 @@ archon isolation list
 # Cleanup old worktrees
 archon isolation cleanup
 ```
+
+## Running Multiple Workflows
+
+Run each workflow separately with its own branch. Do NOT combine multiple issues into one command.
+
+```bash
+# Correct: Run each issue in its own worktree (can run in parallel)
+archon workflow run archon-fix-github-issue --branch fix/issue-1 "#1"
+archon workflow run archon-fix-github-issue --branch fix/issue-2 "#2"
+archon workflow run archon-fix-github-issue --branch fix/issue-3 "#3"
+```
+
+Each workflow gets its own isolated worktree, so they won't conflict.
