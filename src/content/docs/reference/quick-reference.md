@@ -28,24 +28,26 @@ archon isolation cleanup
 
 ## All Workflows
 
-| Workflow | Category | When to Use |
-|----------|----------|-------------|
-| `archon-fix-github-issue` | Fix & Implement | Fix a GitHub issue → PR |
-| `archon-fix-github-issue-dag` | Fix & Implement | Same, parallel execution |
-| `archon-idea-to-pr` | Fix & Implement | Feature idea → plan → PR |
-| `archon-plan-to-pr` | Fix & Implement | Execute existing plan → PR |
-| `archon-feature-development` | Fix & Implement | Implement from plan (lighter) |
-| `archon-smart-pr-review` | Review | Efficient PR review (adapts) |
-| `archon-comprehensive-pr-review` | Review | Full 5-agent review |
-| `archon-issue-review-full` | Review | Fix + comprehensive review |
-| `archon-validate-pr` | Review | Test both branches |
-| `archon-ralph-fresh` | PRD | Long PRDs (stateless) |
-| `archon-ralph-stateful` | PRD | Short PRDs (with memory) |
-| `archon-assist` | Utility | Questions, debugging, exploration |
-| `archon-resolve-conflicts` | Utility | Fix merge conflicts |
-| `archon-architect` | Utility | Codebase health |
-| `archon-remotion-generate` | Specialized | Create Remotion videos |
-| `archon-test-loop` | Specialized | Internal testing |
+For detailed documentation, examples, and decision guidance, see [Workflow Reference](/archon-cli-docs/reference/workflow-reference/).
+
+| Workflow | Category | Use For |
+|----------|----------|---------|
+| [`archon-fix-github-issue`](/archon-cli-docs/reference/workflow-reference/#archon-fix-github-issue) | Fix & Implement | Issue → PR |
+| [`archon-fix-github-issue-dag`](/archon-cli-docs/reference/workflow-reference/#archon-fix-github-issue-dag) | Fix & Implement | Parallel fix |
+| [`archon-idea-to-pr`](/archon-cli-docs/reference/workflow-reference/#archon-idea-to-pr) | Fix & Implement | Idea → PR |
+| [`archon-plan-to-pr`](/archon-cli-docs/reference/workflow-reference/#archon-plan-to-pr) | Fix & Implement | Plan → PR |
+| [`archon-feature-development`](/archon-cli-docs/reference/workflow-reference/#archon-feature-development) | Fix & Implement | Quick implement |
+| [`archon-smart-pr-review`](/archon-cli-docs/reference/workflow-reference/#archon-smart-pr-review) | Review | Adaptive review |
+| [`archon-comprehensive-pr-review`](/archon-cli-docs/reference/workflow-reference/#archon-comprehensive-pr-review) | Review | Full review |
+| [`archon-issue-review-full`](/archon-cli-docs/reference/workflow-reference/#archon-issue-review-full) | Review | Fix + review |
+| [`archon-validate-pr`](/archon-cli-docs/reference/workflow-reference/#archon-validate-pr) | Review | E2E validation |
+| [`archon-ralph-fresh`](/archon-cli-docs/reference/workflow-reference/#archon-ralph-fresh) | PRD | Long PRDs |
+| [`archon-ralph-stateful`](/archon-cli-docs/reference/workflow-reference/#archon-ralph-stateful) | PRD | Short PRDs |
+| [`archon-assist`](/archon-cli-docs/reference/workflow-reference/#archon-assist) | Utility | General help |
+| [`archon-resolve-conflicts`](/archon-cli-docs/reference/workflow-reference/#archon-resolve-conflicts) | Utility | Merge conflicts |
+| [`archon-architect`](/archon-cli-docs/reference/workflow-reference/#archon-architect) | Utility | Architecture |
+| [`archon-remotion-generate`](/archon-cli-docs/reference/workflow-reference/#archon-remotion-generate) | Specialized | Video generation |
+| [`archon-test-loop`](/archon-cli-docs/reference/workflow-reference/#archon-test-loop) | Specialized | Testing loops |
 
 ## Running Multiple Workflows
 
@@ -80,6 +82,6 @@ See [CLI Flags Reference](/archon-cli-docs/reference/cli-flags/) for all flags.
 | Resolve conflicts | `resolve/pr-{number}` | `resolve/pr-456` |
 | General assist | `assist/{description}` | `assist/debug-auth` |
 
-## Not Sure Which Workflow?
+## Need Help Choosing?
 
-See [Workflow Reference](/archon-cli-docs/reference/workflow-reference/) for detailed documentation, examples, and "when NOT to use" guidance for all 16 workflows.
+Use the [decision tree](/archon-cli-docs/reference/workflow-reference/#quick-decision-tree) or start with `archon-assist` — it can help you figure out the right workflow.

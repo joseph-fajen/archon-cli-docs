@@ -46,7 +46,7 @@ What do you need?
 
 Workflows for fixing issues and implementing features.
 
-<details>
+<details id="archon-fix-github-issue">
 <summary><strong>archon-fix-github-issue</strong> — Fix a GitHub issue end-to-end</summary>
 
 Sequential pipeline for fixing GitHub issues with investigation, implementation, and review.
@@ -74,7 +74,7 @@ archon workflow run archon-fix-github-issue --branch fix/issue-42 "#42"
 
 </details>
 
-<details>
+<details id="archon-fix-github-issue-dag">
 <summary><strong>archon-fix-github-issue-dag</strong> — Fix issue with parallel execution</summary>
 
 DAG (Directed Acyclic Graph) workflow with parallel execution for efficient issue fixing.
@@ -106,7 +106,7 @@ archon workflow run archon-fix-github-issue-dag --branch fix/issue-42 "#42"
 
 </details>
 
-<details>
+<details id="archon-idea-to-pr">
 <summary><strong>archon-idea-to-pr</strong> — Build feature from idea</summary>
 
 Complete end-to-end feature development from natural language idea to production-ready PR.
@@ -143,7 +143,7 @@ archon workflow run archon-idea-to-pr --branch feat/dark-mode "Add dark mode tog
 
 </details>
 
-<details>
+<details id="archon-plan-to-pr">
 <summary><strong>archon-plan-to-pr</strong> — Execute existing plan</summary>
 
 Execute an existing implementation plan through to production-ready PR with full review.
@@ -175,7 +175,7 @@ archon workflow run archon-plan-to-pr --branch feat/caching ".agents/plans/cachi
 
 </details>
 
-<details>
+<details id="archon-feature-development">
 <summary><strong>archon-feature-development</strong> — Quick implement from plan</summary>
 
 Lightweight feature implementation from an existing plan without comprehensive review.
@@ -209,7 +209,7 @@ archon workflow run archon-feature-development --branch feat/minor-enhancement
 
 Workflows for reviewing pull requests.
 
-<details>
+<details id="archon-smart-pr-review">
 <summary><strong>archon-smart-pr-review</strong> — Adaptive PR review</summary>
 
 Intelligent PR review that adapts to complexity and only runs relevant agents.
@@ -243,7 +243,7 @@ archon workflow run archon-smart-pr-review --branch review/pr-123 "#123"
 
 </details>
 
-<details>
+<details id="archon-comprehensive-pr-review">
 <summary><strong>archon-comprehensive-pr-review</strong> — Full 5-agent review</summary>
 
 Full-featured PR review that always runs all 5 specialized review agents.
@@ -276,7 +276,7 @@ archon workflow run archon-comprehensive-pr-review --branch review/pr-456 "#456"
 
 </details>
 
-<details>
+<details id="archon-issue-review-full">
 <summary><strong>archon-issue-review-full</strong> — Fix issue + comprehensive review</summary>
 
 Complete issue fix plus comprehensive 5-agent review pipeline.
@@ -306,7 +306,7 @@ archon workflow run archon-issue-review-full --branch fix/issue-42 "#42"
 
 </details>
 
-<details>
+<details id="archon-validate-pr">
 <summary><strong>archon-validate-pr</strong> — E2E validation on both branches</summary>
 
 Thorough PR validation that tests BOTH main branch (bug present) and feature branch (bug fixed).
@@ -347,7 +347,7 @@ archon workflow run archon-validate-pr --branch validate/pr-123 "#123"
 
 Workflows for implementing Product Requirements Documents with multiple user stories.
 
-<details>
+<details id="archon-ralph-fresh">
 <summary><strong>archon-ralph-fresh</strong> — Stateless PRD implementation</summary>
 
 Autonomous PRD implementation loop with fresh context each iteration (stateless).
@@ -393,7 +393,7 @@ archon workflow run archon-ralph-fresh --branch feat/auth-system ".archon/ralph/
 
 </details>
 
-<details>
+<details id="archon-ralph-stateful">
 <summary><strong>archon-ralph-stateful</strong> — Stateful PRD implementation</summary>
 
 Autonomous PRD implementation loop with persistent memory across iterations (stateful).
@@ -440,7 +440,7 @@ archon workflow run archon-ralph-stateful --branch feat/checkout ".archon/ralph/
 
 General-purpose workflows for exploration, conflicts, and architecture.
 
-<details>
+<details id="archon-assist">
 <summary><strong>archon-assist</strong> — General assistance</summary>
 
 Full Claude Code agent with all tools available for general-purpose tasks.
@@ -475,7 +475,7 @@ archon workflow run archon-assist --no-worktree "How does authentication work?"
 
 </details>
 
-<details>
+<details id="archon-resolve-conflicts">
 <summary><strong>archon-resolve-conflicts</strong> — Fix merge conflicts</summary>
 
 Semi-automated merge conflict resolution.
@@ -502,7 +502,7 @@ archon workflow run archon-resolve-conflicts --branch resolve/pr-789 "#789"
 
 </details>
 
-<details>
+<details id="archon-architect">
 <summary><strong>archon-architect</strong> — Codebase health improvement</summary>
 
 Comprehensive architectural sweep and complexity reduction.
@@ -547,7 +547,7 @@ archon workflow run archon-architect --branch refactor/simplify "reduce complexi
 
 Domain-specific workflows.
 
-<details>
+<details id="archon-remotion-generate">
 <summary><strong>archon-remotion-generate</strong> — Generate Remotion videos</summary>
 
 AI-powered Remotion video composition generation with rendering.
@@ -584,7 +584,7 @@ archon workflow run archon-remotion-generate "Create a 10-second intro animation
 
 </details>
 
-<details>
+<details id="archon-test-loop">
 <summary><strong>archon-test-loop</strong> — Test Archon loop engine</summary>
 
 Simple autonomous loop for testing Archon's loop functionality.
