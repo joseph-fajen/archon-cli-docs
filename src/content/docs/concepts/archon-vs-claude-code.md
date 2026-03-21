@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-Archon orchestrates Claude Code. Think of it like the difference between a musician and a conductor.
+Archon orchestrates Claude Code. Think of it like the difference between a conductor and the musicians.
 
 ## Quick Comparison
 

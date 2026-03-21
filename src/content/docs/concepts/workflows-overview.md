@@ -48,6 +48,17 @@ See [Quick Reference](/archon-cli-docs/reference/quick-reference/) for the full 
 
 Workflows call commands. Commands are the building blocks.
 
+## Create Your Own
+
+Archon's built-in workflows are a starting point. You can create custom workflows tailored to your team's process.
+
+**The essential steps:**
+1. Create a YAML file in `.archon/workflows/`
+2. Define the structure: name, description, and steps
+3. Create any command files your workflow references in `.archon/commands/`
+4. Verify discovery: `archon workflow list`
+5. Run it: `archon workflow run my-workflow "message"`
+
 ## Next Steps
 
 - [Quick Reference](/archon-cli-docs/reference/quick-reference/) — All workflows at a glance

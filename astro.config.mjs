@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/archon-cli-docs',
   integrations: [
     starlight({
-      title: 'Archon CLI',
+      title: 'Archon CLI Docs',
       description: 'Pathway-based documentation for Archon CLI users',
       customCss: ['./src/styles/custom.css'],
       social: [
@@ -23,6 +23,7 @@ export default defineConfig({
         {
           label: 'Getting Started',
           items: [
+            { label: 'What is Archon?', slug: 'getting-started/what-is-archon' },
             { label: 'Prerequisites', slug: 'getting-started' },
             { label: 'Installation', slug: 'getting-started/install' },
             { label: 'First Workflow', slug: 'getting-started/first-workflow' },

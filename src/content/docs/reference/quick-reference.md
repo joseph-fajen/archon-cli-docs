@@ -7,6 +7,25 @@ sidebar:
 
 Everything you need on one page.
 
+## Common Commands
+
+```bash
+# List available workflows
+archon workflow list
+
+# Run a workflow
+archon workflow run <name> --branch <branch> "message"
+
+# Check status
+archon workflow status
+
+# List worktrees
+archon isolation list
+
+# Cleanup old worktrees
+archon isolation cleanup
+```
+
 ## All Workflows
 
 | Workflow | Category | When to Use |
@@ -28,68 +47,6 @@ Everything you need on one page.
 | `archon-remotion-generate` | Specialized | Create Remotion videos |
 | `archon-test-loop` | Specialized | Internal testing |
 
-## CLI Flags
-
-| Flag | Effect |
-|------|--------|
-| `--cwd <path>` | Target directory |
-| `--branch <name>` | Explicit branch for worktree |
-| `--from <branch>` | Override base branch |
-| `--no-worktree` | Skip isolation, run in live checkout |
-| `--resume` | Resume from last failed run |
-| `--json` | Machine-readable output (`workflow list` only) |
-
-## Branch Naming Conventions
-
-| Task Type | Pattern | Example |
-|-----------|---------|---------|
-| Fix issue | `fix/issue-{number}` | `fix/issue-123` |
-| Feature | `feat/{name}` | `feat/dark-mode` |
-| PR review | `review/pr-{number}` | `review/pr-456` |
-| Resolve conflicts | `resolve/pr-{number}` | `resolve/pr-456` |
-| General assist | `assist/{description}` | `assist/debug-auth` |
-
-## Workflow Selection Decision Tree
-
-```
-What do you need?
-│
-├─ Fix something
-│  ├─ GitHub issue exists? → archon-fix-github-issue
-│  └─ No issue, just fix? → archon-idea-to-pr
-│
-├─ Build something
-│  ├─ Have a PRD? → archon-ralph-fresh
-│  ├─ Have a plan? → archon-plan-to-pr
-│  └─ Just an idea? → archon-idea-to-pr
-│
-├─ Review something
-│  ├─ Quick review? → archon-smart-pr-review
-│  └─ Thorough review? → archon-comprehensive-pr-review
-│
-└─ Explore / Ask
-   └─ → archon-assist
-```
-
-## Common Commands
-
-```bash
-# List available workflows
-archon workflow list
-
-# Run a workflow
-archon workflow run <name> --branch <branch> "message"
-
-# Check status
-archon workflow status
-
-# List worktrees
-archon isolation list
-
-# Cleanup old worktrees
-archon isolation cleanup
-```
-
 ## Running Multiple Workflows
 
 Run each workflow separately with its own branch. Do NOT combine multiple issues into one command.
@@ -102,3 +59,27 @@ archon workflow run archon-fix-github-issue --branch fix/issue-3 "#3"
 ```
 
 Each workflow gets its own isolated worktree, so they won't conflict.
+
+## CLI Flags
+
+| Flag | Effect |
+|------|--------|
+| `--branch <name>` | Explicit branch for worktree |
+| `--cwd <path>` | Target directory |
+| `--no-worktree` | Skip isolation, run in live checkout |
+
+See [CLI Flags Reference](/archon-cli-docs/reference/cli-flags/) for all flags.
+
+## Branch Naming Conventions
+
+| Task Type | Pattern | Example |
+|-----------|---------|---------|
+| Fix issue | `fix/issue-{number}` | `fix/issue-123` |
+| Feature | `feat/{name}` | `feat/dark-mode` |
+| PR review | `review/pr-{number}` | `review/pr-456` |
+| Resolve conflicts | `resolve/pr-{number}` | `resolve/pr-456` |
+| General assist | `assist/{description}` | `assist/debug-auth` |
+
+## Not Sure Which Workflow?
+
+See [Choosing a Workflow](/archon-cli-docs/concepts/choosing-a-workflow/) for the full decision guide with examples and "when NOT to use" guidance.
