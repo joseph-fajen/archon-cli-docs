@@ -20,13 +20,9 @@ bun link
 
 ### "claude: command not found"
 
-Claude Code CLI isn't installed.
+Claude Code CLI isn't installed. Visit [claude.ai/code](https://claude.ai/code) to install, then authenticate:
 
 ```bash
-# macOS/Linux
-curl -fsSL https://claude.ai/install.sh | bash
-
-# Then authenticate
 claude /login
 ```
 
@@ -103,6 +99,5 @@ claude /login
 If you're stuck:
 
 1. Check `archon workflow status` for error details
-2. Run with `--verbose` for debug output
-3. Ask in the [Dynamous community](https://dynamous.ai)
-4. File an issue on [GitHub](https://github.com/dynamous-community/remote-coding-agent/issues)
+2. Ask in the [Dynamous community](https://dynamous.ai)
+3. File an issue on [GitHub](https://github.com/dynamous-community/remote-coding-agent/issues)

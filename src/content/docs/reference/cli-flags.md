@@ -13,8 +13,6 @@ All flags available for the Archon CLI.
 |------|-------|-------------|
 | `--help` | `-h` | Show help |
 | `--version` | | Show version |
-| `--quiet` | `-q` | Reduce log verbosity |
-| `--verbose` | `-v` | Show debug output |
 
 ## Workflow Run Flags
 

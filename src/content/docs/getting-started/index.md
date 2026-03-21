@@ -11,17 +11,16 @@ Get everything you need to run Archon workflows. Most developers already have th
 |------|-----|-------|---------|
 | **Git** | Version control for worktrees | `git --version` | [git-scm.com](https://git-scm.com/) |
 | **Bun** | JavaScript runtime for Archon | `bun --version` | `curl -fsSL https://bun.sh/install \| bash` |
-| **Claude Code** | AI assistant that Archon orchestrates | `claude --version` | [claude.ai/install](https://claude.ai/code) |
-| **GitHub CLI** | Create PRs, manage issues | `gh --version` | `brew install gh` |
+| **Claude Code** | AI assistant that Archon orchestrates | `claude --version` | [claude.ai/code](https://claude.ai/code) |
 
 ## Verify Your Setup
 
 ```bash
 # Run all checks
-git --version && bun --version && claude --version && gh --version
+git --version && bun --version && claude --version
 ```
 
-**You're ready when:** All four commands return version numbers.
+**You're ready when:** All three commands return version numbers.
 
 ## Next Steps
 

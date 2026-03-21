@@ -27,13 +27,7 @@ archon workflow run archon-assist "Explain the main entry point"
 
 ## What You'll See
 
-```
-[Archon] Creating worktree...
-[Archon] Running archon-assist...
-[Claude] Analyzing codebase...
-
-This project is a [description]...
-```
+Archon will create an isolated worktree, run Claude Code to analyze your project, and return a detailed explanation. The workflow typically takes 1-2 minutes.
 
 ## Next Steps
 

@@ -37,9 +37,7 @@ Everything you need on one page.
 | `--from <branch>` | Override base branch |
 | `--no-worktree` | Skip isolation, run in live checkout |
 | `--resume` | Resume from last failed run |
-| `--quiet`, `-q` | Reduce log verbosity |
-| `--verbose`, `-v` | Show debug output |
-| `--json` | Machine-readable output (workflow list) |
+| `--json` | Machine-readable output (`workflow list` only) |
 
 ## Workflow Selection Decision Tree
 

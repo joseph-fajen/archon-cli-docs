@@ -26,10 +26,10 @@ claude /login
 
 ```bash
 # From any directory
-archon --version
+archon version
 ```
 
-**You're ready when:** `archon --version` shows a version number.
+**You're ready when:** `archon version` shows a version number.
 
 ## Next Steps
 
