@@ -1,0 +1,17 @@
+/* Archon CLI Docs - Teal/Cyan Accent Theme
+ * Differentiates from Agentic Coding Companion (purple default)
+ */
+
+/* Dark mode (default) */
+:root {
+  --sl-color-accent-low: #134e4a;
+  --sl-color-accent: #14b8a6;
+  --sl-color-accent-high: #5eead4;
+}
+
+/* Light mode */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #99f6e4;
+  --sl-color-accent: #0d9488;
+  --sl-color-accent-high: #0f766e;
+}

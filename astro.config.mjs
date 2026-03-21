@@ -10,6 +10,7 @@ export default defineConfig({
     starlight({
       title: 'Archon CLI',
       description: 'Pathway-based documentation for Archon CLI users',
+      customCss: ['./src/styles/custom.css'],
       social: [
         {
           icon: 'github',
