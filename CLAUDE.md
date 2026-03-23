@@ -26,10 +26,10 @@
 src/content/docs/           # All documentation content (Markdown/MDX)
 ├── index.mdx               # Landing page with pathway cards
 ├── getting-started/        # Prerequisites, Install, First Workflow
-├── pathways/               # Fix Issue, Build Feature, Explore Code
+├── workflows/              # Which Workflow?, All Workflows
+├── guides/                 # Fix Issue, Build Feature, Explore Code
 ├── concepts/               # Archon vs Claude Code, Isolation, Workflows
-├── recovery/               # Resume, Cleanup
-└── reference/              # Quick Reference, CLI Flags, Troubleshooting
+└── reference/              # Quick Reference, Resume & Cleanup, CLI Flags, Troubleshooting
 
 astro.config.mjs            # Starlight config, sidebar structure
 .github/workflows/deploy.yml # GitHub Pages deployment
@@ -37,12 +37,12 @@ astro.config.mjs            # Starlight config, sidebar structure
 
 ### Content Structure Pattern
 
-Each pathway page follows this structure:
+Each guide page follows this structure:
 1. **The Command** — Copy-paste ready bash block
 2. **What Happens** — Numbered steps, 1 sentence each
 3. **What You Get** — Concrete outcome description
 4. **Options** — Table of relevant flags
-5. **Next Steps** — Links to related pathways
+5. **Next Steps** — Links to related guides
 
 ## Code Style
 

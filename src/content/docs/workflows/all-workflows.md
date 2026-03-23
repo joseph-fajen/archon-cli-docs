@@ -1,5 +1,5 @@
 ---
-title: Workflow Reference
+title: All Workflows
 description: Complete reference for all 16 Archon workflows
 sidebar:
   order: 2
@@ -636,6 +636,6 @@ archon workflow run archon-test-loop
 
 1. **Start with `archon-assist`** — Ask it what to do
 2. **Use the decision tree above** — Follow the branches
-3. **Check the [Quick Reference](/archon-cli-docs/reference/quick-reference/)** — All workflows at a glance
+3. **Check [Which Workflow?](/archon-cli-docs/workflows/which-workflow/)** — Decision tree and quick lookup
 
 When in doubt, `archon-assist` is always available and can help you figure out the right approach.

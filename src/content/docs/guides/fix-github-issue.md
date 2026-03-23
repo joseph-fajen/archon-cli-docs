@@ -47,5 +47,5 @@ Replace `NUMBER` with your issue number.
 
 ## Next Steps
 
-- [Build a Feature](/archon-cli-docs/pathways/build-feature/) — For feature requests
-- [Quick Reference](/archon-cli-docs/reference/quick-reference/) — All workflows at a glance
+- [Build a Feature](/archon-cli-docs/guides/build-feature/) — For feature requests
+- [Which Workflow?](/archon-cli-docs/workflows/which-workflow/) — All workflows at a glance
