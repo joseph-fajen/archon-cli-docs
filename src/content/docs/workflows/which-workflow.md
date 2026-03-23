@@ -9,7 +9,7 @@ Find the right workflow for your task.
 
 ## Decision Tree
 
-```
+```text
 What do you need?
 │
 ├─ Answer a question / explore → archon-assist
@@ -32,6 +32,8 @@ What do you need?
 ├─ Merge conflicts → archon-resolve-conflicts
 │
 ├─ Architecture cleanup → archon-architect
+│
+├─ Run tests in a loop → archon-test-loop
 │
 ├─ Implement PRD with stories
 │  ├─ Short PRD, coupled stories → archon-ralph-stateful

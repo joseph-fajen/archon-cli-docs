@@ -71,7 +71,7 @@ archon complete <branch-name> --force
 
 ### Where Worktrees Live
 
-```
+```text
 ~/.archon/workspaces/
   └── owner/repo/
       └── worktrees/
