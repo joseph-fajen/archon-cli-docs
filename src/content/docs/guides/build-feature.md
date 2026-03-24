@@ -52,5 +52,5 @@ archon workflow run archon-idea-to-pr --branch feat/your-feature "Your feature d
 
 ## Next Steps
 
-- [Fix a GitHub Issue](/archon-cli-docs/pathways/fix-github-issue/) — For bug fixes
-- [Quick Reference](/archon-cli-docs/reference/quick-reference/) — All workflows at a glance
+- [Fix a GitHub Issue](/archon-cli-docs/guides/fix-github-issue/) — For bug fixes
+- [Which Workflow?](/archon-cli-docs/workflows/which-workflow/) — All workflows at a glance

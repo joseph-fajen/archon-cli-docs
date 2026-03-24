@@ -33,6 +33,6 @@ Archon will create an isolated worktree, run Claude Code to analyze your project
 
 Now that you've seen Archon work, choose your pathway:
 
-- [Fix a GitHub Issue](/archon-cli-docs/pathways/fix-github-issue/) — Point at an issue, get a PR
-- [Build a Feature](/archon-cli-docs/pathways/build-feature/) — Describe an idea, get a PR
-- [Explore Code](/archon-cli-docs/pathways/explore-code/) — Ask questions, debug, understand
+- [Fix a GitHub Issue](/archon-cli-docs/guides/fix-github-issue/) — Point at an issue, get a PR
+- [Build a Feature](/archon-cli-docs/guides/build-feature/) — Describe an idea, get a PR
+- [Explore Code](/archon-cli-docs/guides/explore-code/) — Ask questions, debug, understand

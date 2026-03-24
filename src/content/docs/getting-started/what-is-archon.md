@@ -32,7 +32,7 @@ One command. Full process. Ready for review.
 
 ## Batteries Included
 
-Archon ships with [16 pre-defined workflows](/archon-cli-docs/reference/quick-reference/) for common development tasks — fixing GitHub issues, building features, running code reviews, resolving merge conflicts, and more. These workflows are referenced throughout this guide and work out of the box. You can use them as-is, customize them, or create your own from scratch.
+Archon ships with [16 pre-defined workflows](/archon-cli-docs/workflows/which-workflow/) for common development tasks — fixing GitHub issues, building features, running code reviews, resolving merge conflicts, and more. These workflows are referenced throughout this guide and work out of the box. You can use them as-is, customize them, or create your own from scratch.
 
 ## Next Steps
 

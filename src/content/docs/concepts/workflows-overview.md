@@ -39,7 +39,7 @@ Archon ships with 16 workflows. The most common:
 | `archon-assist` | Q&A, exploration |
 | `archon-smart-pr-review` | Efficient PR review |
 
-See [Quick Reference](/archon-cli-docs/reference/quick-reference/) for the full list.
+See [Which Workflow?](/archon-cli-docs/workflows/which-workflow/) for the full list.
 
 ## Commands vs Workflows
 
@@ -61,5 +61,5 @@ Archon's built-in workflows are a starting point. You can create custom workflow
 
 ## Next Steps
 
-- [Quick Reference](/archon-cli-docs/reference/quick-reference/) — All workflows at a glance
-- [Fix a GitHub Issue](/archon-cli-docs/pathways/fix-github-issue/) — Try a workflow
+- [Which Workflow?](/archon-cli-docs/workflows/which-workflow/) — All workflows at a glance
+- [Fix a GitHub Issue](/archon-cli-docs/guides/fix-github-issue/) — Try a workflow

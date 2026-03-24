@@ -58,5 +58,5 @@ archon workflow run archon-assist "What does the UserService class do?"
 
 ## Next Steps
 
-- [Fix a GitHub Issue](/archon-cli-docs/pathways/fix-github-issue/) — When you're ready to fix
-- [Build a Feature](/archon-cli-docs/pathways/build-feature/) — When you're ready to build
+- [Fix a GitHub Issue](/archon-cli-docs/guides/fix-github-issue/) — When you're ready to fix
+- [Build a Feature](/archon-cli-docs/guides/build-feature/) — When you're ready to build

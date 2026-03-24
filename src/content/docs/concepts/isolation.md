@@ -49,5 +49,4 @@ archon workflow run archon-assist --no-worktree "Quick question"
 
 ## Next Steps
 
-- [Resume Failed Workflows](/archon-cli-docs/recovery/resume/) — When things go wrong
-- [Cleanup Worktrees](/archon-cli-docs/recovery/cleanup/) — Managing disk space
+- [Resume & Cleanup](/archon-cli-docs/reference/resume-and-cleanup/) — When things go wrong or managing disk space

@@ -9,6 +9,9 @@ hero:
       link: /archon-cli-docs/getting-started/
       icon: right-arrow
       variant: primary
+    - text: Which Workflow?
+      link: /archon-cli-docs/workflows/which-workflow/
+      icon: list-format
     - text: View on GitHub
       link: https://github.com/dynamous-community/remote-coding-agent
       icon: external
@@ -23,25 +26,25 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## What do you want to do?
 
 <CardGrid>
+  <Card title="Which Workflow?" icon="list-format">
+    Decision tree and all 16 workflows. Find the right command in seconds.
+
+    [Find your workflow →](/archon-cli-docs/workflows/which-workflow/)
+  </Card>
   <Card title="Fix a GitHub Issue" icon="github">
     Point Archon at an issue, get a PR with investigation, implementation, and validation.
 
-    [Start here →](/archon-cli-docs/pathways/fix-github-issue/)
+    [Start here →](/archon-cli-docs/guides/fix-github-issue/)
   </Card>
   <Card title="Build a Feature" icon="rocket">
     Describe your idea, Archon creates a plan, implements it, and opens a PR with reviews.
 
-    [Start here →](/archon-cli-docs/pathways/build-feature/)
+    [Start here →](/archon-cli-docs/guides/build-feature/)
   </Card>
   <Card title="Explore Code" icon="magnifier">
     Ask questions about your codebase. Debug issues. Understand unfamiliar code.
 
-    [Start here →](/archon-cli-docs/pathways/explore-code/)
-  </Card>
-  <Card title="Quick Reference" icon="document">
-    All 16 workflows, all CLI flags, decision tree for workflow selection.
-
-    [View reference →](/archon-cli-docs/reference/quick-reference/)
+    [Start here →](/archon-cli-docs/guides/explore-code/)
   </Card>
 </CardGrid>
 

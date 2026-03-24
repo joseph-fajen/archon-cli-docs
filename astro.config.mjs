@@ -30,20 +30,23 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Pathways',
+          label: 'Workflows',
           items: [
-            { label: 'Fix a GitHub Issue', slug: 'pathways/fix-github-issue' },
-            { label: 'Build a Feature', slug: 'pathways/build-feature' },
-            { label: 'Explore Code', slug: 'pathways/explore-code' },
+            { label: 'Which Workflow?', slug: 'workflows/which-workflow' },
+            { label: 'All Workflows', slug: 'workflows/all-workflows' },
+          ],
+        },
+        {
+          label: 'Guides',
+          items: [
+            { label: 'Fix a GitHub Issue', slug: 'guides/fix-github-issue' },
+            { label: 'Build a Feature', slug: 'guides/build-feature' },
+            { label: 'Explore Code', slug: 'guides/explore-code' },
           ],
         },
         {
           label: 'Concepts',
           autogenerate: { directory: 'concepts' },
-        },
-        {
-          label: 'Recovery',
-          autogenerate: { directory: 'recovery' },
         },
         {
           label: 'Reference',
